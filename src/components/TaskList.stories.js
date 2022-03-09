@@ -6,6 +6,8 @@ import * as TaskStories from "./Task.stories";
 export default {
   component: TaskList,
   title: "Simple component/TaskList",
+  //Decorators is for wrap the storie, on this example the decorator is used for wrap story on div with padding
+  //This is unique used for the visualization on storybook tool
   decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
 };
 
