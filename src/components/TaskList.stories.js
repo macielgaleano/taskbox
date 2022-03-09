@@ -48,7 +48,7 @@ const Mockstore = ({ taskboxState, children }) => (
 
 export default {
   component: TaskList,
-  title: "TaskList",
+  title: "Simple component/TaskList",
   decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
   excludeStories: /.*MockedState$/,
 };
@@ -65,7 +65,7 @@ WithPinnedTasks.decorators = [
   (story) => {
     const pinnedtasks = [
       ...MockedState.tasks.slice(0, 5),
-      { id: "6", title: "Task 6 (pinned)", state: "TASK_PINNED" },
+      { id: "6", title: "Task 6", state: "TASK_PINNED" },
     ];
 
     return (
